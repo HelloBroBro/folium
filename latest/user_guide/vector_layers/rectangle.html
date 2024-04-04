@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Rectangle &#8212; Folium 0.1.dev1+g8a91065 documentation</title>
+    <title>Rectangle &#8212; Folium 0.1.dev1+g5a202ed documentation</title>
   
   
   
@@ -37,7 +37,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
   <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script src="../../_static/documentation_options.js?v=26bcf634"></script>
+    <script src="../../_static/documentation_options.js?v=726090c4"></script>
     <script src="../../_static/doctools.js?v=888ff710"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -433,7 +433,7 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="../plugins/geocoder.html">Geocoder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/grouped_layer_control.html">GroupedLayerControl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/heatmap.html">Heatmap</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../plugins/heatmap_with_time.html">HeatMapWithTime Plugin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plugins/heatmap_with_time.html">HeatMapWithTime</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/locate_control.html">LocateControl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/marker_cluster.html">MarkerCluster</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../plugins/mini_map.html">MiniMap</a></li>
@@ -583,7 +583,7 @@ document.write(`
     &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css&quot;/&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
@@ -591,7 +591,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_26e9ef69ed3414f95304099b3adefca0 {
+                #map_5b7c9b65ff2e74a4eaeac9a2c3d44ae8 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -605,14 +605,14 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_26e9ef69ed3414f95304099b3adefca0&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_5b7c9b65ff2e74a4eaeac9a2c3d44ae8&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_26e9ef69ed3414f95304099b3adefca0 = L.map(
-                &quot;map_26e9ef69ed3414f95304099b3adefca0&quot;,
+            var map_5b7c9b65ff2e74a4eaeac9a2c3d44ae8 = L.map(
+                &quot;map_5b7c9b65ff2e74a4eaeac9a2c3d44ae8&quot;,
                 {
                     center: [35.685, 139.76],
                     crs: L.CRS.EPSG3857,
@@ -626,37 +626,37 @@ document.write(`
 
 
 
-            var tile_layer_8cda2ba64d2114def89facaea7ae55a0 = L.tileLayer(
+            var tile_layer_5d4b404c089da99aba4dae08e27fc86f = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_8cda2ba64d2114def89facaea7ae55a0.addTo(map_26e9ef69ed3414f95304099b3adefca0);
+            tile_layer_5d4b404c089da99aba4dae08e27fc86f.addTo(map_5b7c9b65ff2e74a4eaeac9a2c3d44ae8);
 
 
-            var rectangle_92d8c72c835503c8c8e58b6688abb82a = L.rectangle(
+            var rectangle_36dfa374a56ca7763deee7144a693205 = L.rectangle(
                 [[35.681, 139.766], [35.691, 139.776]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: &quot;5, 5&quot;, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 5}
-            ).addTo(map_26e9ef69ed3414f95304099b3adefca0);
+            ).addTo(map_5b7c9b65ff2e74a4eaeac9a2c3d44ae8);
 
 
-        var popup_f3a1fd53c8512a207bdefbfe0fc26a24 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-
-
-                var html_93e17818fe70ff025499d305cde7bf27 = $(`&lt;div id=&quot;html_93e17818fe70ff025499d305cde7bf27&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Tokyo, Japan&lt;/div&gt;`)[0];
-                popup_f3a1fd53c8512a207bdefbfe0fc26a24.setContent(html_93e17818fe70ff025499d305cde7bf27);
+        var popup_49ee5b0a5945b75e7141197e2f70325f = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
 
 
-        rectangle_92d8c72c835503c8c8e58b6688abb82a.bindPopup(popup_f3a1fd53c8512a207bdefbfe0fc26a24)
+                var html_9c31de987aef5b42c3f73d5b59775e32 = $(`&lt;div id=&quot;html_9c31de987aef5b42c3f73d5b59775e32&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Tokyo, Japan&lt;/div&gt;`)[0];
+                popup_49ee5b0a5945b75e7141197e2f70325f.setContent(html_9c31de987aef5b42c3f73d5b59775e32);
+
+
+
+        rectangle_36dfa374a56ca7763deee7144a693205.bindPopup(popup_49ee5b0a5945b75e7141197e2f70325f)
         ;
 
 
 
 
-            rectangle_92d8c72c835503c8c8e58b6688abb82a.bindTooltip(
+            rectangle_36dfa374a56ca7763deee7144a693205.bindTooltip(
                 `&lt;div&gt;
                      &lt;strong&gt;Click me!&lt;/strong&gt;
                  &lt;/div&gt;`,
@@ -664,28 +664,28 @@ document.write(`
             );
 
 
-            var rectangle_d3b05a542b3e05d1b1503808908dcb0d = L.rectangle(
+            var rectangle_1868f97e63aa36dc66ed82ece2796f9c = L.rectangle(
                 [[35.681, 139.754], [35.691, 139.764]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: &quot;5, 10&quot;, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;mitter&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 5}
-            ).addTo(map_26e9ef69ed3414f95304099b3adefca0);
+            ).addTo(map_5b7c9b65ff2e74a4eaeac9a2c3d44ae8);
 
 
-        var popup_92e1876ef6fdba907e80cb9ab89108ae = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-
-
-                var html_d674d5e4c473757ebece8fc01916f9ff = $(`&lt;div id=&quot;html_d674d5e4c473757ebece8fc01916f9ff&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Tokyo, Japan&lt;/div&gt;`)[0];
-                popup_92e1876ef6fdba907e80cb9ab89108ae.setContent(html_d674d5e4c473757ebece8fc01916f9ff);
+        var popup_07316fec04c8c5e35aab118332d61288 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
 
 
-        rectangle_d3b05a542b3e05d1b1503808908dcb0d.bindPopup(popup_92e1876ef6fdba907e80cb9ab89108ae)
+                var html_7408230badffbe02c1a8ae3005866032 = $(`&lt;div id=&quot;html_7408230badffbe02c1a8ae3005866032&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Tokyo, Japan&lt;/div&gt;`)[0];
+                popup_07316fec04c8c5e35aab118332d61288.setContent(html_7408230badffbe02c1a8ae3005866032);
+
+
+
+        rectangle_1868f97e63aa36dc66ed82ece2796f9c.bindPopup(popup_07316fec04c8c5e35aab118332d61288)
         ;
 
 
 
 
-            rectangle_d3b05a542b3e05d1b1503808908dcb0d.bindTooltip(
+            rectangle_1868f97e63aa36dc66ed82ece2796f9c.bindTooltip(
                 `&lt;div&gt;
                      &lt;strong&gt;Click me!&lt;/strong&gt;
                  &lt;/div&gt;`,
@@ -693,28 +693,28 @@ document.write(`
             );
 
 
-            var rectangle_dc139df0b21e3994d15a35d1359589ad = L.rectangle(
+            var rectangle_97a586754f46427cefdfd671c68b7efc = L.rectangle(
                 [[35.681, 139.742], [35.691, 139.7522]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: &quot;15, 10, 5, 10, 15&quot;, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;bevel&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 5}
-            ).addTo(map_26e9ef69ed3414f95304099b3adefca0);
+            ).addTo(map_5b7c9b65ff2e74a4eaeac9a2c3d44ae8);
 
 
-        var popup_063b9b06f4604dce8a8c457ba834ed0d = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-
-
-                var html_d2525db2f92bdcb7308e20d1d724198f = $(`&lt;div id=&quot;html_d2525db2f92bdcb7308e20d1d724198f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Tokyo, Japan&lt;/div&gt;`)[0];
-                popup_063b9b06f4604dce8a8c457ba834ed0d.setContent(html_d2525db2f92bdcb7308e20d1d724198f);
+        var popup_ea0b7dfd0717f7e807cab393c54124a1 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
 
 
-        rectangle_dc139df0b21e3994d15a35d1359589ad.bindPopup(popup_063b9b06f4604dce8a8c457ba834ed0d)
+                var html_da9c51b06d1d42b5f3b1e35a20c2135c = $(`&lt;div id=&quot;html_da9c51b06d1d42b5f3b1e35a20c2135c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Tokyo, Japan&lt;/div&gt;`)[0];
+                popup_ea0b7dfd0717f7e807cab393c54124a1.setContent(html_da9c51b06d1d42b5f3b1e35a20c2135c);
+
+
+
+        rectangle_97a586754f46427cefdfd671c68b7efc.bindPopup(popup_ea0b7dfd0717f7e807cab393c54124a1)
         ;
 
 
 
 
-            rectangle_dc139df0b21e3994d15a35d1359589ad.bindTooltip(
+            rectangle_97a586754f46427cefdfd671c68b7efc.bindTooltip(
                 `&lt;div&gt;
                      &lt;strong&gt;Click me!&lt;/strong&gt;
                  &lt;/div&gt;`,
@@ -795,7 +795,7 @@ document.write(`
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev1.dev+g8a91065</div>
+Folium version 0.1.dev1.dev+g5a202ed</div>
       
         <div class="footer-item">
 
