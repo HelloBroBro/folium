@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>PolyLineTextPath &#8212; Folium 0.1.dev1+gec1181c documentation</title>
+    <title>PolyLineTextPath &#8212; Folium 0.1.dev1+gc913354 documentation</title>
   
   
   
@@ -37,7 +37,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
   <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script src="../../_static/documentation_options.js?v=b1560e70"></script>
+    <script src="../../_static/documentation_options.js?v=083d3b84"></script>
     <script src="../../_static/doctools.js?v=888ff710"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -449,8 +449,10 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="side_by_side_layers.html">SideBySideLayers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tag_filter_button.html">TagFilterButton</a></li>
 <li class="toctree-l2"><a class="reference internal" href="terminator.html">Terminator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="timeline.html">Timeline and TimelineSlider</a></li>
 <li class="toctree-l2"><a class="reference internal" href="timeslider_choropleth.html">TimeSliderChoropleth</a></li>
 <li class="toctree-l2"><a class="reference internal" href="timestamped_geojson.html">TimestampedGeoJson</a></li>
+<li class="toctree-l2"><a class="reference internal" href="treelayercontrol.html">TreeLayerControl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="vector_tiles.html">Vector tiles using VectorGridProtobuf</a></li>
 <li class="toctree-l2"><a class="reference internal" href="WmsTimeDimension.html">TimestampedWmsTileLayers</a></li>
 </ul>
@@ -635,7 +637,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_e0a432939476f11c138fa621746d5067 {
+                #map_5fba5e6e7a7fc182659c41b10cc8a7e6 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -650,14 +652,14 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_e0a432939476f11c138fa621746d5067&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_5fba5e6e7a7fc182659c41b10cc8a7e6&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_e0a432939476f11c138fa621746d5067 = L.map(
-                &quot;map_e0a432939476f11c138fa621746d5067&quot;,
+            var map_5fba5e6e7a7fc182659c41b10cc8a7e6 = L.map(
+                &quot;map_5fba5e6e7a7fc182659c41b10cc8a7e6&quot;,
                 {
                     center: [30.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -671,70 +673,70 @@ document.write(`
 
 
 
-            var tile_layer_8066ae38d1879718c3281bb967457958 = L.tileLayer(
+            var tile_layer_177f5dfe0164ece9d7aace7e54e5ca41 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_8066ae38d1879718c3281bb967457958.addTo(map_e0a432939476f11c138fa621746d5067);
+            tile_layer_177f5dfe0164ece9d7aace7e54e5ca41.addTo(map_5fba5e6e7a7fc182659c41b10cc8a7e6);
 
 
-            var poly_line_e78a6f21d8a553fadd5d133462234103 = L.polyline(
+            var poly_line_862d7cd04e14a61adc17db984957101c = L.polyline(
                 [[59.3556, -31.99219], [55.17887, -42.89062], [47.7541, -43.94531], [38.27269, -37.96875], [27.05913, -41.13281], [16.29905, -36.5625], [8.40717, -30.23437], [1.05463, -22.5], [-8.75479, -18.28125], [-21.61658, -20.03906], [-31.35364, -24.25781], [-39.90974, -30.9375], [-43.83453, -41.13281], [-47.7541, -49.92187], [-50.95843, -54.14062], [-55.9738, -56.60156]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#8EE9FF&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#8EE9FF&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 15}
-            ).addTo(map_e0a432939476f11c138fa621746d5067);
+            ).addTo(map_5fba5e6e7a7fc182659c41b10cc8a7e6);
 
 
-            poly_line_e78a6f21d8a553fadd5d133462234103.setText(
+            poly_line_862d7cd04e14a61adc17db984957101c.setText(
                 &quot;) &quot;,
                 {&quot;attributes&quot;: {&quot;fill&quot;: &quot;#007DEF&quot;, &quot;font-size&quot;: &quot;24&quot;, &quot;font-weight&quot;: &quot;bold&quot;}, &quot;below&quot;: false, &quot;center&quot;: false, &quot;offset&quot;: 7, &quot;orientation&quot;: 0, &quot;repeat&quot;: true}
             );
 
 
-            var poly_line_0a5ac78c5c6b747dab09720695806712 = L.polyline(
+            var poly_line_3a735ce606644348dd266847061d14a1 = L.polyline(
                 [[-40.311, -31.952], [-12.086, -18.727]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;orange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;orange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.8, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 10}
-            ).addTo(map_e0a432939476f11c138fa621746d5067);
+            ).addTo(map_5fba5e6e7a7fc182659c41b10cc8a7e6);
 
 
-            poly_line_0a5ac78c5c6b747dab09720695806712.setText(
+            poly_line_3a735ce606644348dd266847061d14a1.setText(
                 &quot;\u25ba&quot;,
                 {&quot;attributes&quot;: {&quot;fill&quot;: &quot;red&quot;}, &quot;below&quot;: false, &quot;center&quot;: false, &quot;offset&quot;: 6, &quot;orientation&quot;: 0, &quot;repeat&quot;: true}
             );
 
 
-            var poly_line_8cd8cb35e849996bb729f184921f0a6f = L.polyline(
+            var poly_line_f15a9b50c50e6223b1e6ae54a7200240 = L.polyline(
                 [[-49.38237, -37.26562], [-1.75754, -14.41406], [51.61802, -23.20312]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;black&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;black&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 1}
-            ).addTo(map_e0a432939476f11c138fa621746d5067);
+            ).addTo(map_5fba5e6e7a7fc182659c41b10cc8a7e6);
 
 
-            poly_line_8cd8cb35e849996bb729f184921f0a6f.setText(
+            poly_line_f15a9b50c50e6223b1e6ae54a7200240.setText(
                 &quot;\u2708     &quot;,
                 {&quot;attributes&quot;: {&quot;font-size&quot;: &quot;24&quot;, &quot;font-weight&quot;: &quot;bold&quot;}, &quot;below&quot;: false, &quot;center&quot;: false, &quot;offset&quot;: 8, &quot;orientation&quot;: 0, &quot;repeat&quot;: true}
             );
 
 
-            var poly_line_97ecece2e23ee659c8f2d5b7ac251ea9 = L.polyline(
+            var poly_line_882835b5ebc18e58e8e40efd4c97b369 = L.polyline(
                 [[46.67959447, 3.33984375], [46.5588603, 29.53125], [42.29356419, 51.328125], [35.74651226, 68.5546875], [28.65203063, 76.81640625]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_e0a432939476f11c138fa621746d5067);
+            ).addTo(map_5fba5e6e7a7fc182659c41b10cc8a7e6);
 
 
-            var poly_line_becc234a3fefe0fbea22ef8929e15e72 = L.polyline(
+            var poly_line_84e5a639e5ec8ca0de2fba9e75870490 = L.polyline(
                 [[28.76765911, 77.60742188], [27.83907609, 88.72558594], [25.68113734, 97.3828125], [21.24842224, 105.77636719]],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 1.0, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
-            ).addTo(map_e0a432939476f11c138fa621746d5067);
+            ).addTo(map_5fba5e6e7a7fc182659c41b10cc8a7e6);
 
 
-            poly_line_97ecece2e23ee659c8f2d5b7ac251ea9.setText(
+            poly_line_882835b5ebc18e58e8e40efd4c97b369.setText(
                 &quot;To New Delhi&quot;,
                 {&quot;below&quot;: false, &quot;center&quot;: false, &quot;offset&quot;: -5, &quot;orientation&quot;: 0, &quot;repeat&quot;: false}
             );
 
 
-            poly_line_becc234a3fefe0fbea22ef8929e15e72.setText(
+            poly_line_84e5a639e5ec8ca0de2fba9e75870490.setText(
                 &quot;To Hanoi&quot;,
                 {&quot;below&quot;: false, &quot;center&quot;: false, &quot;offset&quot;: -5, &quot;orientation&quot;: 0, &quot;repeat&quot;: false}
             );
@@ -813,7 +815,7 @@ document.write(`
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev1.dev+gec1181c</div>
+Folium version 0.1.dev1.dev+gc913354</div>
       
         <div class="footer-item">
 

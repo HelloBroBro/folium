@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>LocateControl &#8212; Folium 0.1.dev1+gec1181c documentation</title>
+    <title>LocateControl &#8212; Folium 0.1.dev1+gc913354 documentation</title>
   
   
   
@@ -37,7 +37,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
   <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script src="../../_static/documentation_options.js?v=b1560e70"></script>
+    <script src="../../_static/documentation_options.js?v=083d3b84"></script>
     <script src="../../_static/doctools.js?v=888ff710"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -449,8 +449,10 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="side_by_side_layers.html">SideBySideLayers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tag_filter_button.html">TagFilterButton</a></li>
 <li class="toctree-l2"><a class="reference internal" href="terminator.html">Terminator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="timeline.html">Timeline and TimelineSlider</a></li>
 <li class="toctree-l2"><a class="reference internal" href="timeslider_choropleth.html">TimeSliderChoropleth</a></li>
 <li class="toctree-l2"><a class="reference internal" href="timestamped_geojson.html">TimestampedGeoJson</a></li>
+<li class="toctree-l2"><a class="reference internal" href="treelayercontrol.html">TreeLayerControl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="vector_tiles.html">Vector tiles using VectorGridProtobuf</a></li>
 <li class="toctree-l2"><a class="reference internal" href="WmsTimeDimension.html">TimestampedWmsTileLayers</a></li>
 </ul>
@@ -566,7 +568,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_1c673aa4490e91c4b46fd7499b7a1e4b {
+                #map_4ebaef05e9bcf7e156c9adcef3d976a4 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -582,14 +584,14 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_1c673aa4490e91c4b46fd7499b7a1e4b&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_4ebaef05e9bcf7e156c9adcef3d976a4&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_1c673aa4490e91c4b46fd7499b7a1e4b = L.map(
-                &quot;map_1c673aa4490e91c4b46fd7499b7a1e4b&quot;,
+            var map_4ebaef05e9bcf7e156c9adcef3d976a4 = L.map(
+                &quot;map_4ebaef05e9bcf7e156c9adcef3d976a4&quot;,
                 {
                     center: [41.97, 2.81],
                     crs: L.CRS.EPSG3857,
@@ -603,24 +605,24 @@ document.write(`
 
 
 
-            var tile_layer_87e8073be098f7b8dadb1542bfa28af2 = L.tileLayer(
+            var tile_layer_874282244f8c145e4639f632c6e0c739 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_87e8073be098f7b8dadb1542bfa28af2.addTo(map_1c673aa4490e91c4b46fd7499b7a1e4b);
+            tile_layer_874282244f8c145e4639f632c6e0c739.addTo(map_4ebaef05e9bcf7e156c9adcef3d976a4);
 
 
-            var locate_control_9e3e6ec8c05aba0de310eae78f2718c2 = L.control.locate(
+            var locate_control_08d4b6f51752f7d15035a681c7b2b5db = L.control.locate(
                 {}
-            ).addTo(map_1c673aa4490e91c4b46fd7499b7a1e4b);
+            ).addTo(map_4ebaef05e9bcf7e156c9adcef3d976a4);
 
 
 
-            var locate_control_d0bc8e36712ee737c81c74054ccc3d08 = L.control.locate(
+            var locate_control_9e93087af6f380c9868e24c4844056eb = L.control.locate(
                 {}
-            ).addTo(map_1c673aa4490e91c4b46fd7499b7a1e4b);
+            ).addTo(map_4ebaef05e9bcf7e156c9adcef3d976a4);
 
 
 &lt;/script&gt;
@@ -697,7 +699,7 @@ document.write(`
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev1.dev+gec1181c</div>
+Folium version 0.1.dev1.dev+gc913354</div>
       
         <div class="footer-item">
 

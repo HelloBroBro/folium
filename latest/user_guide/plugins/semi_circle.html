@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>SemiCircle &#8212; Folium 0.1.dev1+gec1181c documentation</title>
+    <title>SemiCircle &#8212; Folium 0.1.dev1+gc913354 documentation</title>
   
   
   
@@ -37,7 +37,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
   <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script src="../../_static/documentation_options.js?v=b1560e70"></script>
+    <script src="../../_static/documentation_options.js?v=083d3b84"></script>
     <script src="../../_static/doctools.js?v=888ff710"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -449,8 +449,10 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="side_by_side_layers.html">SideBySideLayers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tag_filter_button.html">TagFilterButton</a></li>
 <li class="toctree-l2"><a class="reference internal" href="terminator.html">Terminator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="timeline.html">Timeline and TimelineSlider</a></li>
 <li class="toctree-l2"><a class="reference internal" href="timeslider_choropleth.html">TimeSliderChoropleth</a></li>
 <li class="toctree-l2"><a class="reference internal" href="timestamped_geojson.html">TimestampedGeoJson</a></li>
+<li class="toctree-l2"><a class="reference internal" href="treelayercontrol.html">TreeLayerControl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="vector_tiles.html">Vector tiles using VectorGridProtobuf</a></li>
 <li class="toctree-l2"><a class="reference internal" href="WmsTimeDimension.html">TimestampedWmsTileLayers</a></li>
 </ul>
@@ -583,7 +585,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_4d25d00e07cd17748662d5e2a7618845 {
+                #map_ac29360e511a66ad14c8fa244febc2cf {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -598,14 +600,14 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_4d25d00e07cd17748662d5e2a7618845&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_ac29360e511a66ad14c8fa244febc2cf&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_4d25d00e07cd17748662d5e2a7618845 = L.map(
-                &quot;map_4d25d00e07cd17748662d5e2a7618845&quot;,
+            var map_ac29360e511a66ad14c8fa244febc2cf = L.map(
+                &quot;map_ac29360e511a66ad14c8fa244febc2cf&quot;,
                 {
                     center: [45.0, 3.0],
                     crs: L.CRS.EPSG3857,
@@ -619,55 +621,55 @@ document.write(`
 
 
 
-            var tile_layer_01c23c9082df44fef326342a0d2b1947 = L.tileLayer(
+            var tile_layer_58d67b760e7cddabac74465c4411d1e4 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_01c23c9082df44fef326342a0d2b1947.addTo(map_4d25d00e07cd17748662d5e2a7618845);
+            tile_layer_58d67b760e7cddabac74465c4411d1e4.addTo(map_ac29360e511a66ad14c8fa244febc2cf);
 
 
-            var semi_circle_f506b6f842fd5b2082fa3aeee36f4d4d = L.semiCircle(
+            var semi_circle_8a5ac57a4d753434d9d645c2bd1c493e = L.semiCircle(
                 [45.0, 3.0],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 0, &quot;radius&quot;: 400000, &quot;startAngle&quot;: 50, &quot;stopAngle&quot;: 200, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
                 )
-                .addTo(map_4d25d00e07cd17748662d5e2a7618845);
+                .addTo(map_ac29360e511a66ad14c8fa244febc2cf);
 
 
-        var popup_edac1feebecbfbeddc3c5d02913be092 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-
-
-                var html_c2ad7d9fad39f4e4541e172505ec157a = $(`&lt;div id=&quot;html_c2ad7d9fad39f4e4541e172505ec157a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;start angle - 50 degrees, stop angle - 200 degrees&lt;/div&gt;`)[0];
-                popup_edac1feebecbfbeddc3c5d02913be092.setContent(html_c2ad7d9fad39f4e4541e172505ec157a);
+        var popup_015a6a2b38612a489a5ff4833b2e3370 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
 
 
-        semi_circle_f506b6f842fd5b2082fa3aeee36f4d4d.bindPopup(popup_edac1feebecbfbeddc3c5d02913be092)
+                var html_7ecfd010eae01c87b86f1c203037795e = $(`&lt;div id=&quot;html_7ecfd010eae01c87b86f1c203037795e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;start angle - 50 degrees, stop angle - 200 degrees&lt;/div&gt;`)[0];
+                popup_015a6a2b38612a489a5ff4833b2e3370.setContent(html_7ecfd010eae01c87b86f1c203037795e);
+
+
+
+        semi_circle_8a5ac57a4d753434d9d645c2bd1c493e.bindPopup(popup_015a6a2b38612a489a5ff4833b2e3370)
         ;
 
 
 
 
-            var semi_circle_d98692336a0d5831a03de5215e56fa67 = L.semiCircle(
+            var semi_circle_f2ecf822645a6c3095a614cb485a44fd = L.semiCircle(
                 [46.5, 9.5],
                 {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 0, &quot;radius&quot;: 200000, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
                 )
                     .setDirection(360, 90)
-                .addTo(map_4d25d00e07cd17748662d5e2a7618845);
+                .addTo(map_ac29360e511a66ad14c8fa244febc2cf);
 
 
-        var popup_abcd5f579f113d59d78c78486d28310a = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
-
-
-
-                var html_874726c3110590a37228f354247c210e = $(`&lt;div id=&quot;html_874726c3110590a37228f354247c210e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Direction - 0 degrees, arc 90 degrees&lt;/div&gt;`)[0];
-                popup_abcd5f579f113d59d78c78486d28310a.setContent(html_874726c3110590a37228f354247c210e);
+        var popup_4bed036f38e532fe7056e9ac9eb90981 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
 
 
 
-        semi_circle_d98692336a0d5831a03de5215e56fa67.bindPopup(popup_abcd5f579f113d59d78c78486d28310a)
+                var html_186aef7641a02b381fdada88d37499d2 = $(`&lt;div id=&quot;html_186aef7641a02b381fdada88d37499d2&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Direction - 0 degrees, arc 90 degrees&lt;/div&gt;`)[0];
+                popup_4bed036f38e532fe7056e9ac9eb90981.setContent(html_186aef7641a02b381fdada88d37499d2);
+
+
+
+        semi_circle_f2ecf822645a6c3095a614cb485a44fd.bindPopup(popup_4bed036f38e532fe7056e9ac9eb90981)
         ;
 
 
@@ -746,7 +748,7 @@ document.write(`
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev1.dev+gec1181c</div>
+Folium version 0.1.dev1.dev+gc913354</div>
       
         <div class="footer-item">
 
