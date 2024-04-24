@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Geocoder &#8212; Folium 0.1.dev1+g1b0cf8b documentation</title>
+    <title>Geocoder &#8212; Folium 0.1.dev1859+gcbd03b5 documentation</title>
   
   
   
@@ -37,7 +37,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
   <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script src="../../_static/documentation_options.js?v=c1433147"></script>
+    <script src="../../_static/documentation_options.js?v=564d7366"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -565,7 +565,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_2c5fa732ae8c8e0f9d2cbe37708cda46 {
+                #map_85e524519a0678a8c27cfe8a05824cbf {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -581,14 +581,14 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_2c5fa732ae8c8e0f9d2cbe37708cda46&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_85e524519a0678a8c27cfe8a05824cbf&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_2c5fa732ae8c8e0f9d2cbe37708cda46 = L.map(
-                &quot;map_2c5fa732ae8c8e0f9d2cbe37708cda46&quot;,
+            var map_85e524519a0678a8c27cfe8a05824cbf = L.map(
+                &quot;map_85e524519a0678a8c27cfe8a05824cbf&quot;,
                 {
                     center: [0.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -602,32 +602,32 @@ document.write(`
 
 
 
-            var tile_layer_b13abe176d66d59c519ab4ea62c351b9 = L.tileLayer(
+            var tile_layer_62fb687ef03cd193a2002dbb9917f612 = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_b13abe176d66d59c519ab4ea62c351b9.addTo(map_2c5fa732ae8c8e0f9d2cbe37708cda46);
+            tile_layer_62fb687ef03cd193a2002dbb9917f612.addTo(map_85e524519a0678a8c27cfe8a05824cbf);
 
 
 
-            var geocoderOpts_geocoder_95dbf45814d20eb7764d94b7d4566df5 = {&quot;collapsed&quot;: false, &quot;defaultMarkGeocode&quot;: true, &quot;position&quot;: &quot;topright&quot;, &quot;provider&quot;: &quot;nominatim&quot;, &quot;providerOptions&quot;: {}, &quot;zoom&quot;: 11};
+            var geocoderOpts_geocoder_acbaa537d20fbdcac8401e5cf354c14e = {&quot;collapsed&quot;: false, &quot;defaultMarkGeocode&quot;: true, &quot;position&quot;: &quot;topright&quot;, &quot;provider&quot;: &quot;nominatim&quot;, &quot;providerOptions&quot;: {}, &quot;zoom&quot;: 11};
 
             // note: geocoder name should start with lowercase
-            var geocoderName_geocoder_95dbf45814d20eb7764d94b7d4566df5 = geocoderOpts_geocoder_95dbf45814d20eb7764d94b7d4566df5[&quot;provider&quot;];
+            var geocoderName_geocoder_acbaa537d20fbdcac8401e5cf354c14e = geocoderOpts_geocoder_acbaa537d20fbdcac8401e5cf354c14e[&quot;provider&quot;];
 
-            var customGeocoder_geocoder_95dbf45814d20eb7764d94b7d4566df5 = L.Control.Geocoder[ geocoderName_geocoder_95dbf45814d20eb7764d94b7d4566df5 ](
-                geocoderOpts_geocoder_95dbf45814d20eb7764d94b7d4566df5[&#x27;providerOptions&#x27;]
+            var customGeocoder_geocoder_acbaa537d20fbdcac8401e5cf354c14e = L.Control.Geocoder[ geocoderName_geocoder_acbaa537d20fbdcac8401e5cf354c14e ](
+                geocoderOpts_geocoder_acbaa537d20fbdcac8401e5cf354c14e[&#x27;providerOptions&#x27;]
             );
-            geocoderOpts_geocoder_95dbf45814d20eb7764d94b7d4566df5[&quot;geocoder&quot;] = customGeocoder_geocoder_95dbf45814d20eb7764d94b7d4566df5;
+            geocoderOpts_geocoder_acbaa537d20fbdcac8401e5cf354c14e[&quot;geocoder&quot;] = customGeocoder_geocoder_acbaa537d20fbdcac8401e5cf354c14e;
 
             L.Control.geocoder(
-                geocoderOpts_geocoder_95dbf45814d20eb7764d94b7d4566df5
+                geocoderOpts_geocoder_acbaa537d20fbdcac8401e5cf354c14e
             ).on(&#x27;markgeocode&#x27;, function(e) {
-                var zoom = geocoderOpts_geocoder_95dbf45814d20eb7764d94b7d4566df5[&#x27;zoom&#x27;] || map_2c5fa732ae8c8e0f9d2cbe37708cda46.getZoom();
-                map_2c5fa732ae8c8e0f9d2cbe37708cda46.setView(e.geocode.center, zoom);
-            }).addTo(map_2c5fa732ae8c8e0f9d2cbe37708cda46);
+                var zoom = geocoderOpts_geocoder_acbaa537d20fbdcac8401e5cf354c14e[&#x27;zoom&#x27;] || map_85e524519a0678a8c27cfe8a05824cbf.getZoom();
+                map_85e524519a0678a8c27cfe8a05824cbf.setView(e.geocode.center, zoom);
+            }).addTo(map_85e524519a0678a8c27cfe8a05824cbf);
 
 
 &lt;/script&gt;
@@ -704,13 +704,13 @@ document.write(`
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev1.dev+g1b0cf8b</div>
+Folium version 0.1.dev1859+gcbd03b5</div>
       
         <div class="footer-item">
 
   <p class="copyright">
     
-      © Copyright 2013, Rob Story.
+      © Copyright 2013-2024, Rob Story.
       <br/>
     
   </p>
