@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>BoatMarker &#8212; Folium 0.1.dev1870+gbeb438c documentation</title>
+    <title>BoatMarker &#8212; Folium 0.1.dev1872+g4f1781c documentation</title>
   
   
   
@@ -37,7 +37,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
   <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script src="../../_static/documentation_options.js?v=4f665623"></script>
+    <script src="../../_static/documentation_options.js?v=0578a11f"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -440,6 +440,8 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="measure_control.html">MeasureControl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mouse_position.html">MousePosition</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pattern.html">Pattern plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polygon_encoded.html">PolygonFromEncoded</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polyline_encoded.html">PolyLineFromEncoded</a></li>
 <li class="toctree-l2"><a class="reference internal" href="polyline_offset.html">PolylineOffset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="polyline_textpath.html">PolyLineTextPath</a></li>
 <li class="toctree-l2"><a class="reference internal" href="realtime.html">Realtime</a></li>
@@ -569,7 +571,7 @@ document.write(`
             &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
             &lt;style&gt;
-                #map_6eca736fc33bee812fbea0de13445684 {
+                #map_9f150e4ac89aafd3ae5e568a9f732c55 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -584,14 +586,14 @@ document.write(`
 &lt;body&gt;
 
 
-            &lt;div class=&quot;folium-map&quot; id=&quot;map_6eca736fc33bee812fbea0de13445684&quot; &gt;&lt;/div&gt;
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_9f150e4ac89aafd3ae5e568a9f732c55&quot; &gt;&lt;/div&gt;
 
 &lt;/body&gt;
 &lt;script&gt;
 
 
-            var map_6eca736fc33bee812fbea0de13445684 = L.map(
-                &quot;map_6eca736fc33bee812fbea0de13445684&quot;,
+            var map_9f150e4ac89aafd3ae5e568a9f732c55 = L.map(
+                &quot;map_9f150e4ac89aafd3ae5e568a9f732c55&quot;,
                 {
                     center: [30.0, 0.0],
                     crs: L.CRS.EPSG3857,
@@ -605,31 +607,31 @@ document.write(`
 
 
 
-            var tile_layer_fc6df4fc21f32f9262c5f4d9e9cb1eef = L.tileLayer(
+            var tile_layer_51a14d6f5e3825fe6395eb796eb71c7e = L.tileLayer(
                 &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
                 {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
             );
 
 
-            tile_layer_fc6df4fc21f32f9262c5f4d9e9cb1eef.addTo(map_6eca736fc33bee812fbea0de13445684);
+            tile_layer_51a14d6f5e3825fe6395eb796eb71c7e.addTo(map_9f150e4ac89aafd3ae5e568a9f732c55);
 
 
-            var boat_marker_2757f36cd65ba2100c6bc828479a330d = L.boatMarker(
+            var boat_marker_f942c892b1c9780c7890edd8e3470723 = L.boatMarker(
                 [34.0, -43.0],
                 {&quot;color&quot;: &quot;#8f8&quot;}
-            ).addTo(map_6eca736fc33bee812fbea0de13445684);
-            boat_marker_2757f36cd65ba2100c6bc828479a330d.setHeadingWind(
+            ).addTo(map_9f150e4ac89aafd3ae5e568a9f732c55);
+            boat_marker_f942c892b1c9780c7890edd8e3470723.setHeadingWind(
                 45,
                 45,
                 150
             );
 
 
-            var boat_marker_1a5e93f0c869f1f80aaf8b6129e9bc6d = L.boatMarker(
+            var boat_marker_509c45a8df1239b204b42e8e292f3d0f = L.boatMarker(
                 [46.0, -30.0],
                 {&quot;color&quot;: &quot;#88f&quot;}
-            ).addTo(map_6eca736fc33bee812fbea0de13445684);
-            boat_marker_1a5e93f0c869f1f80aaf8b6129e9bc6d.setHeadingWind(
+            ).addTo(map_9f150e4ac89aafd3ae5e568a9f732c55);
+            boat_marker_509c45a8df1239b204b42e8e292f3d0f.setHeadingWind(
                 -20,
                 25,
                 46
@@ -709,7 +711,7 @@ document.write(`
     <div class="footer-items__start">
       
         <div class="footer-item"><!-- This will display the version of the docs -->
-Folium version 0.1.dev1870+gbeb438c</div>
+Folium version 0.1.dev1872+g4f1781c</div>
       
         <div class="footer-item">
 
